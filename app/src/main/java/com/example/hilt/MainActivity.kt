@@ -11,6 +11,7 @@ import javax.inject.Inject
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     @Inject
+    @FireBaseQualifier
     lateinit var userRepository: UserRepository
     override fun onCreate(savedInstanceState: Bundle?) {
         binding=ActivityMainBinding.inflate(layoutInflater)
